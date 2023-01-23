@@ -30,9 +30,9 @@ const About = (props: Props) => {
           x: 0,
           opacity: 1,
         }}
-        // viewport={{
-        //   once: true,
-        // }}
+        viewport={{
+          once: true,
+        }}
         src="https://i.postimg.cc/V682BDB7/karan1.jpg"
         className="flex-shrink-0 object-cover w-56 h-56 -mb-20 rounded-full md:rounded-lg md:w-62 md:h-96 md:mb-0 xl:w-[340px] xl:h-[600px]"
       />
