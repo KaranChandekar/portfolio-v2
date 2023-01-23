@@ -43,7 +43,7 @@ const About = (props: Props) => {
           <span className="underline decoration-[#f7ab0a]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-sm">
+        <p className="text-sm text-justify">
           {" "}
           I'm Karan :) An indie front-end developer and designer building my
           version of the digital world one step at a time. All coding projects
