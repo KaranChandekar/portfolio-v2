@@ -21,11 +21,13 @@ const Hero = (props: Props) => {
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
-      <Image
-        className="relative object-cover w-32 h-32 mx-auto rounded-full"
-        src={MyProfileImg}
-        alt="Karan's Profile Picture"
-      />
+      <div className="relative w-32 h-32 mx-auto">
+        <Image
+          className="object-contain rounded-full "
+          src={MyProfileImg}
+          alt="Karan's Profile Picture"
+        />
+      </div>
       <div className="z-20">
         <h2 className="pb-2 text-sm text-gray-500 uppercase tracking-[15px]">
           Frontend Developer
