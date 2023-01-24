@@ -37,7 +37,7 @@ const About = (props: Props) => {
         className="flex-shrink-0 object-cover w-44 h-44 -mb-28 rounded-full md:rounded-lg md:w-62 md:h-96 md:mb-0 xl:w-[340px] xl:h-[600px]"
       />
 
-      <div className="px-0 space-y-10 md:px-10">
+      <div className="px-0 space-y-5 md:space-y-10 md:px-10">
         <h4 className="text-2xl font-semibold md:text-4xl">
           Here is a{" "}
           <span className="underline decoration-[#f7ab0a]/50">little</span>{" "}
@@ -66,7 +66,8 @@ const About = (props: Props) => {
           >
             KaranChandekar
           </a>{" "}
-          with more than 2k followers.
+          with more than 2k followers. I try to beat previous me and make myself
+          better day by day, giving my best to learn and acquire top skills and become a great developer. 🎯
         </p>
       </div>
     </motion.div>
