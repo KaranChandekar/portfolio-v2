@@ -19,18 +19,18 @@ const ContactMe = (props: Props) => {
   };
 
   return (
-    <div className="relative z-0 flex flex-col items-center h-screen px-10 mx-auto overflow-hidden text-center max-w-7xl md:text-left md:flex-row justify-evenly">
-      <h3 className="absolute uppercase top-24 tracking-[24px] text-gray-500 text-2xl">
+    <div className="relative z-0 flex flex-col items-center h-screen px-4 mx-auto overflow-hidden text-center md:px-10 max-w-7xl md:text-left md:flex-row justify-evenly">
+      <h3 className="absolute uppercase md:top-24 top-16 tracking-[24px] text-gray-500 text-lg md:text-2xl">
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-2xl font-semibold md:text-4xl">
+      <div className="flex flex-col space-y-5">
+        <h4 className="text-2xl font-semibold md:text-4xl md:w-auto w-[250px] mx-auto">
           I have got just what you need,{" "}
           <span className="decoration-[#f7ab0a]/50 underline">Let's Talk</span>
         </h4>
 
-        <div className="space-y-5">
+        <div className="space-y-3">
           <div className="flex items-center justify-center space-x-5">
             <PhoneIcon className="text-[#f7ab0a] h-5 w-5 animate-pulse" />
             <p className="md:text-lg">+1234567890</p>
@@ -51,7 +51,7 @@ const ContactMe = (props: Props) => {
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col mx-auto space-y-2 w-fit"
         >
-          <div className="flex space-x-2">
+          <div className="space-y-2 md:space-x-2 md:space-y-0 md:flex">
             <input
               {...register("name")}
               placeholder="Name"

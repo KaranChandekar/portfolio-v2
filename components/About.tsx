@@ -14,7 +14,7 @@ const About = (props: Props) => {
       transition={{ duration: 1.5 }}
       className="relative flex flex-col items-center h-screen px-4 mx-auto text-center md:px-10 md:text-left md:flex-row max-w-7xl justify-evenly"
     >
-      <h3 className="absolute uppercase top-16 tracking-[24px] text-gray-500 text-2xl">
+      <h3 className="absolute uppercase top-16 md:top-24 tracking-[24px] text-lg text-gray-500 md:text-2xl">
         About
       </h3>
 
@@ -45,7 +45,7 @@ const About = (props: Props) => {
         </h4>
         <p className="text-sm text-justify lg:text-base">
           {" "}
-          I'm Karan :) An indie front-end developer and designer building my
+          Hi 👋 I'm Karan :) An indie front-end developer and designer building my
           version of the digital world one step at a time. All coding projects
           are built from the ground up, from planning and designing all the way
           to solving real-life problems with code. From ideation and planning,

@@ -15,13 +15,13 @@ const Projects = (props: Props) => {
       transition={{ duration: 1.5 }}
       className="relative z-0 flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left md:flex-row justify-evenly"
     >
-      <h3 className="absolute uppercase top-24 tracking-[24px] text-gray-500 text-2xl">
+      <h3 className="absolute uppercase top-16 md:top-24 tracking-[24px] text-lg text-gray-500 md:text-2xl">
         Projects
       </h3>
 
       <div className="relative z-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scrollbar-thin">
         {projects.map((project, i) => (
-          <div className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-20 space-y-5 snap-center md:p-44">
+          <div className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-4 space-y-5 snap-center md:p-44">
             <motion.img
               initial={{
                 y: -300,
@@ -41,7 +41,7 @@ const Projects = (props: Props) => {
               alt=""
             />
 
-            <div className="max-w-6xl px-0 space-y-10 md:px-10">
+            <div className="max-w-6xl px-0 space-y-5 md:px-10">
               <h4 className="text-2xl font-semibold text-center md:text-4xl">
                 <span className="underline decoration-[#f7ab0a]/50">
                   {" "}
