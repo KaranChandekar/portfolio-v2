@@ -43,7 +43,7 @@ const ContactMe = (props: Props) => {
 
           <div className="flex items-center justify-center space-x-5">
             <MapPinIcon className="text-[#f7ab0a] h-5 w-5 animate-pulse" />
-            <p className="md:text-lg">123 Developer Lane</p>
+            <p className="md:text-lg">Nagpur, Maharashtra, 441108, India</p>
           </div>
         </div>
 

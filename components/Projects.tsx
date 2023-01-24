@@ -21,7 +21,7 @@ const Projects = (props: Props) => {
 
       <div className="relative z-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scrollbar-thin">
         {projects.map((project, i) => (
-          <div className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-4 space-y-5 snap-center md:p-44">
+          <div className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-4 space-y-5 snap-center md:p-10">
             <motion.img
               initial={{
                 y: -300,
@@ -49,7 +49,7 @@ const Projects = (props: Props) => {
                 </span>{" "}
                 Architect Website
               </h4>
-              <p className="text-center md:text-left md:text-lg">
+              <p className="text-justify md:text-left md:text-lg">
                 An Architect Website with animation to it's landing page. It has
                 nice navbar with hamburger menu. An about us section with some
                 information and house image and the Team section with cards and
