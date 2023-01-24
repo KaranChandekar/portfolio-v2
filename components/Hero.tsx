@@ -29,15 +29,15 @@ const Hero = (props: Props) => {
         />
       </div>
       <div className="z-20">
-        <h2 className="pb-2 text-xs md:text-sm text-gray-500 uppercase md:tracking-[15px] tracking-[10px]">
+        <h2 className="pb-4 text-xs md:text-sm text-gray-500 uppercase md:tracking-[15px] tracking-[10px]">
           Frontend Developer
         </h2>
-        <h1 className="px-10 text-2xl font-semibold md:text-5xl lg:text-6xl">
+        <h1 className="text-2xl font-semibold md:px-10 md:text-5xl lg:text-6xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#f7ab0a" />
         </h1>
 
-        <div className="pt-5">
+        <div className="pt-8">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
