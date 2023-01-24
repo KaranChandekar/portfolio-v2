@@ -7,6 +7,9 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
+import Link from "next/link";
+import Image from "next/image";
+import FooterLogo from "../images/karan.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -47,6 +50,18 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky w-full cursor-pointer bottom-5">
+          <div className="flex items-center justify-center">
+            <Image
+              className="w-10 h-10 rounded-full cursor-pointer filter grayscale hover:grayscale-0"
+              src={FooterLogo}
+              alt="footer logo"
+            />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };
