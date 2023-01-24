@@ -10,6 +10,7 @@ import ContactMe from "@/components/ContactMe";
 import Link from "next/link";
 import Image from "next/image";
 import FooterLogo from "../images/karan.jpg";
+import dynamic from "next/dynamic";
 
 const Home: NextPage = () => {
   return (
@@ -66,4 +67,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default dynamic(() => Promise.resolve(Home), { ssr: false });
