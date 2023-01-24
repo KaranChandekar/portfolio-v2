@@ -12,7 +12,7 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly"
+      className="relative flex flex-col items-center h-screen px-4 mx-auto text-center md:px-10 md:text-left md:flex-row max-w-7xl justify-evenly"
     >
       <h3 className="absolute uppercase top-24 tracking-[24px] text-gray-500 text-2xl">
         About
@@ -34,16 +34,16 @@ const About = (props: Props) => {
           once: true,
         }}
         src="https://i.postimg.cc/V682BDB7/karan1.jpg"
-        className="flex-shrink-0 object-cover w-56 h-56 -mb-20 rounded-full md:rounded-lg md:w-62 md:h-96 md:mb-0 xl:w-[340px] xl:h-[600px]"
+        className="flex-shrink-0 object-cover w-44 h-44 -mb-28 rounded-full md:rounded-lg md:w-62 md:h-96 md:mb-0 xl:w-[340px] xl:h-[600px]"
       />
 
       <div className="px-0 space-y-10 md:px-10">
-        <h4 className="text-4xl font-semibold">
+        <h4 className="text-2xl font-semibold md:text-4xl">
           Here is a{" "}
           <span className="underline decoration-[#f7ab0a]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-sm text-justify">
+        <p className="text-sm text-justify lg:text-base">
           {" "}
           I'm Karan :) An indie front-end developer and designer building my
           version of the digital world one step at a time. All coding projects
