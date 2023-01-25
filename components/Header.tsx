@@ -51,7 +51,7 @@ const Header = (props: Props) => {
         />
       </motion.div>
 
-      <Link href="#contact">
+      <Link href="#contact" legacyBehavior>
         <motion.div
           initial={{
             x: 500,
