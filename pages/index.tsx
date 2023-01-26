@@ -53,7 +53,7 @@ const Home: NextPage = () => {
       </section>
 
       <Link href="#hero">
-        <footer className="sticky w-full cursor-pointer bottom-10 md:bottom-5">
+        <footer className="sticky w-full cursor-pointer bottom-5">
           <div className="flex items-center justify-center">
             <Image
               className="w-10 h-10 rounded-full cursor-pointer filter grayscale hover:grayscale-0 animate-bounce"
