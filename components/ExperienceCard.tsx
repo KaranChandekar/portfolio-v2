@@ -22,7 +22,7 @@ function ExperienceCard(props: any) {
         }}
         className="object-cover object-center w-32 h-32 rounded-full"
         src={props.logo}
-        alt="YoungNomads"
+        alt="Company logo"
       />
 
       <div className="px-0">
