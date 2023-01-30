@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 function ExperienceCard(props: any) {
   return (
@@ -29,68 +28,59 @@ function ExperienceCard(props: any) {
         <h4 className="text-2xl font-light md:text-3xl">{props.title}</h4>
         <p className="mt-1 text-xl font-bold">{props.company}</p>
         <div className="flex my-2 space-x-2">
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[0]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[1]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[2]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[3]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[4]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[5]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[6]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[7]}
-            alt="js"
           />
-          <Image
+          <motion.img
             width={30}
             height={30}
             className="rounded-full"
             src={props.skills[8]}
-            alt="js"
           />
         </div>
         <p className="py-3 text-gray-300 uppercase">
