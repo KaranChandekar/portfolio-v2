@@ -19,15 +19,15 @@ function ExperienceCard(props: any) {
         viewport={{
           once: true,
         }}
-        className="object-cover object-center w-32 h-32 rounded-full"
+        className="object-cover object-center rounded-full h-28 w-28"
         src={props.logo}
         alt="Company logo"
       />
 
       <div className="px-0">
-        <h4 className="text-2xl font-light md:text-3xl">{props.title}</h4>
-        <p className="mt-1 text-xl font-bold">{props.company}</p>
-        <div className="flex my-2 space-x-2">
+        <h4 className="text-3xl font-light">{props.title}</h4>
+        <p className="mt-2 text-xl font-bold">{props.company}</p>
+        <div className="flex my-4 space-x-4">
           <motion.img
             width={30}
             height={30}
@@ -86,7 +86,7 @@ function ExperienceCard(props: any) {
         <p className="py-3 text-gray-300 uppercase">
           {props.startDate} - {props.endDate}
         </p>
-        <ul className="ml-5 space-y-2 text-sm list-disc lg:text-base">
+        <ul className="ml-5 space-y-3 text-sm list-disc lg:text-base">
           <li>{props.summary[0]}</li>
           <li>{props.summary[1]}</li>
           <li>{props.summary[2]}</li>
