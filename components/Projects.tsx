@@ -10,6 +10,14 @@ type Props = {};
 const Projects = ({ props: Props }: any) => {
   const projects = [
     {
+      title: "Weather App",
+      description:
+        "Simple Weather app created with HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information.",
+      image:
+        "https://user-images.githubusercontent.com/93200960/216075953-1f2e8162-e028-4ba1-9523-e66e2782dde4.png",
+      link: "https://weather-app-karanchandekar.vercel.app/",
+    },
+    {
       title: "Apple E-Commerce",
       description:
         "It is an Apple eCommerce website containing couple of different sections with cool animations. It has nice hover effect on nav links. An iPhone cube with rotation controls.",
@@ -204,6 +212,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[12].description}
           image={projects[12].image}
           url={projects[12].link}
+        />
+        <Project
+          title={projects[13].title}
+          description={projects[13].description}
+          image={projects[13].image}
+          url={projects[13].link}
         />
       </div>
 
