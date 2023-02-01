@@ -10,6 +10,14 @@ type Props = {};
 const Projects = ({ props: Props }: any) => {
   const projects = [
     {
+      title: "My Fitness",
+      description:
+        "My Fitness is a gym website created using HTML, CSS and JavaScript",
+      image:
+        "https://user-images.githubusercontent.com/93200960/216081497-ca93155d-f927-44ff-9b7f-0f51da923590.png",
+      link: "https://my-fitness-phi.vercel.app/",
+    },
+    {
       title: "Weather App",
       description:
         "Simple Weather app created with HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information.",
@@ -218,6 +226,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[13].description}
           image={projects[13].image}
           url={projects[13].link}
+        />
+        <Project
+          title={projects[14].title}
+          description={projects[14].description}
+          image={projects[14].image}
+          url={projects[14].link}
         />
       </div>
 
