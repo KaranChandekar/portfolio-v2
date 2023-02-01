@@ -18,6 +18,14 @@ const Projects = ({ props: Props }: any) => {
       link: "https://metaversusmadness.vercel.app/",
     },
     {
+      title: "Emoji Search App",
+      description:
+        "A basic application where we can search for an emoji by typing in input box. It has also the functionality of copying emoji to clipboard.",
+      image:
+        "https://user-images.githubusercontent.com/93200960/214320076-a8596ce8-09d6-4d23-98c2-67829b263077.png",
+      link: "https://searchmyemoji.netlify.app/",
+    },
+    {
       title: "My Fitness",
       description:
         "My Fitness is a gym website created using HTML, CSS and JavaScript",
@@ -274,6 +282,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[17].description}
           image={projects[17].image}
           url={projects[17].link}
+        />
+        <Project
+          title={projects[18].title}
+          description={projects[18].description}
+          image={projects[18].image}
+          url={projects[18].link}
         />
       </div>
 
