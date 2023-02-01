@@ -10,6 +10,14 @@ type Props = {};
 const Projects = ({ props: Props }: any) => {
   const projects = [
     {
+      title: "Metaverse",
+      description:
+        "A modern Next 13 website with Framer Motion & Tailwind CSS.",
+      image:
+        "https://user-images.githubusercontent.com/93200960/216083237-b4fdefab-dfd3-4b3a-8bd5-c6755950a45c.png",
+      link: "https://metaversusmadness.vercel.app/",
+    },
+    {
       title: "My Fitness",
       description:
         "My Fitness is a gym website created using HTML, CSS and JavaScript",
@@ -246,6 +254,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[15].description}
           image={projects[15].image}
           url={projects[15].link}
+        />
+        <Project
+          title={projects[16].title}
+          description={projects[16].description}
+          image={projects[16].image}
+          url={projects[16].link}
         />
       </div>
 
