@@ -26,6 +26,14 @@ const Projects = ({ props: Props }: any) => {
       link: "https://my-fitness-phi.vercel.app/",
     },
     {
+      title: "Blog App",
+      description:
+        "A basic application where user can add, edit and delete a blog as well as view other blogs and make changes in them.",
+      image:
+        "https://user-images.githubusercontent.com/93200960/211460092-29588e43-c124-4b8d-b7d8-6286d3058d2b.png",
+      link: "https://blog-app-karanchandekar.vercel.app/",
+    },
+    {
       title: "Netflix",
       description:
         "Netflix homepage clone. Created this UI clone using simple HTML, CSS and JavaScript",
@@ -260,6 +268,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[16].description}
           image={projects[16].image}
           url={projects[16].link}
+        />
+        <Project
+          title={projects[17].title}
+          description={projects[17].description}
+          image={projects[17].image}
+          url={projects[17].link}
         />
       </div>
 
