@@ -105,6 +105,14 @@ const Projects = ({ props: Props }: any) => {
         "https://user-images.githubusercontent.com/93200960/216073135-8c09f630-0f97-4940-9603-704414173edd.png",
       link: "https://shoe-site.vercel.app/",
     },
+    {
+      title: "Fauxica",
+      description:
+        "Simple cloth shop UI design with some animations using html and css.",
+      image:
+        "https://user-images.githubusercontent.com/93200960/211344137-5b6621ac-bbe0-4d40-b770-c2447fe0d063.png",
+      link: "https://fauxica.vercel.app/",
+    },
   ];
 
   return (
@@ -190,6 +198,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[11].description}
           image={projects[11].image}
           url={projects[11].link}
+        />
+        <Project
+          title={projects[12].title}
+          description={projects[12].description}
+          image={projects[12].image}
+          url={projects[12].link}
         />
       </div>
 
