@@ -97,6 +97,14 @@ const Projects = ({ props: Props }: any) => {
         "https://user-images.githubusercontent.com/93200960/157717477-9088feea-8c0d-4152-a1e7-4257101c5adb.png",
       link: "https://movie-start.netlify.app/",
     },
+    {
+      title: "Shoe Site",
+      description:
+        "Mobile first shoe site design using html, css and javascript",
+      image:
+        "https://user-images.githubusercontent.com/93200960/216073135-8c09f630-0f97-4940-9603-704414173edd.png",
+      link: "https://shoe-site.vercel.app/",
+    },
   ];
 
   return (
@@ -176,6 +184,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[10].description}
           image={projects[10].image}
           url={projects[10].link}
+        />
+        <Project
+          title={projects[11].title}
+          description={projects[11].description}
+          image={projects[11].image}
+          url={projects[11].link}
         />
       </div>
 
