@@ -10,6 +10,14 @@ type Props = {};
 const Projects = ({ props: Props }: any) => {
   const projects = [
     {
+      title: "Apple E-Commerce",
+      description:
+        "It is an Apple eCommerce website containing couple of different sections with cool animations. It has nice hover effect on nav links. An iPhone cube with rotation controls.",
+      image:
+        "https://user-images.githubusercontent.com/93200960/215094737-297ed4d8-78c7-4014-b3d9-ef93a1d603c0.png",
+      link: "https://apple-ecom.netlify.app/",
+    },
+    {
       title: "Wine House",
       description:
         "Fully responsive wine shop website named wine house. Created using html, css and javascript.",
@@ -162,6 +170,12 @@ const Projects = ({ props: Props }: any) => {
           description={projects[9].description}
           image={projects[9].image}
           url={projects[9].link}
+        />
+        <Project
+          title={projects[10].title}
+          description={projects[10].description}
+          image={projects[10].image}
+          url={projects[10].link}
         />
       </div>
 
