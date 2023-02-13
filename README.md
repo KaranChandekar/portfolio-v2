@@ -1,3 +1,3 @@
 # Portfolio v2
 
-Personal portfolio website build with Next JS and Tailwind CSS.
+Personal portfolio website built with Next JS and Tailwind CSS.
