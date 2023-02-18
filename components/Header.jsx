@@ -3,7 +3,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -51,7 +50,7 @@ const Header = () => {
         />
       </motion.div>
 
-      <Link href="#contact" legacyBehavior>
+      <a href="#contact" legacyBehavior>
         <motion.div
           initial={{
             x: 500,
@@ -78,7 +77,7 @@ const Header = () => {
             Get in Touch
           </p>
         </motion.div>
-      </Link>
+      </a>
     </header>
   );
 };
