@@ -1,12 +1,9 @@
-/* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+'use client';
 
-type Props = {};
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const About = (props: Props) => {
+const About = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -39,18 +36,18 @@ const About = (props: Props) => {
 
       <div className="px-0 space-y-5 md:space-y-10 md:px-10">
         <h4 className="text-2xl font-semibold md:text-4xl">
-          Here is a{" "}
-          <span className="underline decoration-[#f7ab0a]/50">little</span>{" "}
+          Here is a{' '}
+          <span className="underline decoration-[#f7ab0a]/50">little</span>{' '}
           background
         </h4>
         <p className="text-sm text-justify lg:text-base">
-          {" "}
+          {' '}
           Hi 👋 I'm Karan :) An indie front-end developer and designer building
           my version of the digital world one step at a time. All coding
           projects are built from the ground up, from planning and designing all
           the way to solving real-life problems with code. From ideation and
           planning, all the way to finalizing the project with artistic touches.
-          I push my every projects source code on my Github profile{" "}
+          I push my every projects source code on my Github profile{' '}
           <a
             className="underline decoration-[#f7ab0a]/50 md:no-underline md:hover:underline"
             href="https://github.com/KaranChandekar"
@@ -58,14 +55,14 @@ const About = (props: Props) => {
           >
             KaranChandekar
           </a>
-          , also post my projects content and learnings on my Linkedin profile{" "}
+          , also post my projects content and learnings on my Linkedin profile{' '}
           <a
             className="underline decoration-[#f7ab0a]/50 md:no-underline md:hover:underline"
             href="https://www.linkedin.com/in/karan-chandekar-a87263219/"
             target="_blank"
           >
             KaranChandekar
-          </a>{" "}
+          </a>{' '}
           with more than 2k followers. I try to beat previous me and make myself
           better day by day, giving my best to learn and acquire top skills and
           become a great developer. 🎯

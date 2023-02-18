@@ -1,20 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
-import { useForm, SubmitHandler } from "react-hook-form";
+'use client';
 
-type Inputs = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+import React from 'react';
+import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
+import { useForm } from 'react-hook-form';
 
-type Props = {};
-
-const ContactMe = (props: Props) => {
-  const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+const ContactMe = () => {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = (formData) => {
     window.location.href = `mailto:karanchandekar431@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
 
@@ -26,7 +18,7 @@ const ContactMe = (props: Props) => {
 
       <div className="flex flex-col space-y-5">
         <h4 className="text-2xl font-semibold md:text-4xl md:w-auto w-[280px] mx-auto">
-          I have got just what you need,{" "}
+          I have got just what you need,{' '}
           <span className="decoration-[#f7ab0a]/50 underline">Let's Talk</span>
         </h4>
 
@@ -53,13 +45,13 @@ const ContactMe = (props: Props) => {
         >
           <div className="space-y-2 md:space-x-2 md:space-y-0 md:flex">
             <input
-              {...register("name")}
+              {...register('name')}
               placeholder="Name"
               className="contactInput"
               type="text"
             />
             <input
-              {...register("email")}
+              {...register('email')}
               placeholder="Email"
               className="contactInput"
               type="email"
@@ -67,14 +59,14 @@ const ContactMe = (props: Props) => {
           </div>
 
           <input
-            {...register("subject")}
+            {...register('subject')}
             placeholder="Subject"
             className="contactInput"
             type="text"
           />
 
           <textarea
-            {...register("message")}
+            {...register('message')}
             placeholder="Message"
             className="contactInput"
           />

@@ -1,18 +1,17 @@
-import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import BackgroundCircles from "./BackgroundCircles";
-import Image from "next/image";
-import MyProfileImg from "../images/karan.jpg";
-import Link from "next/link";
+'use client';
 
-type Props = {};
+import React from 'react';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import BackgroundCircles from './BackgroundCircles';
+import Image from 'next/image';
+import MyProfileImg from '../images/karan.jpg';
 
-const Hero = (props: Props) => {
+const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
       "Hi, The Name's Karan Chandekar",
-      "Guy-who-loves-Coffee.tsx",
-      "<ButLovesToCodeMore />",
+      'Guy-who-loves-Coffee.tsx',
+      '<ButLovesToCodeMore />',
     ],
     loop: true,
     delaySpeed: 2000,
@@ -38,18 +37,18 @@ const Hero = (props: Props) => {
         </h1>
 
         <div className="pt-20">
-          <Link href="#about">
+          <a href="#about">
             <button className="heroButton">About</button>
-          </Link>
-          <Link href="#experience">
+          </a>
+          <a href="#experience">
             <button className="heroButton">Experience</button>
-          </Link>
-          <Link href="#skills">
+          </a>
+          <a href="#skills">
             <button className="heroButton">Skills</button>
-          </Link>
-          <Link href="#projects">
+          </a>
+          <a href="#projects">
             <button className="heroButton">Projects</button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
