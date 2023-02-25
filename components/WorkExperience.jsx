@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import ExperienceCard from "./ExperienceCard";
-import { jobs } from "@/data";
+import { motion } from 'framer-motion';
+import ExperienceCard from './ExperienceCard';
+import { jobs } from '@/data';
 
 const WorkExperience = () => {
   return (
@@ -21,7 +21,9 @@ const WorkExperience = () => {
       </h3>
 
       <div className="flex w-full md:px-10 py-32 space-x-10 overflow-x-scroll snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scrollbar-thin h-screen">
-        <ExperienceCard jobs={jobs} />
+        {jobs.map((job) => {
+          return <ExperienceCard key={job.id} {...job} />;
+        })}
       </div>
     </motion.div>
   );

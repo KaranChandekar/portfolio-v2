@@ -25,6 +25,7 @@ const Hero = () => {
           className="object-contain rounded-full "
           src={MyProfileImg}
           alt="Karan's Profile Picture"
+          priority
         />
       </div>
       <div className="z-20">

@@ -1,14 +1,12 @@
-"use client";
+'use client';
 
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-function Skill({ skills }) {
+const Skill = ({ skills }) => {
   return (
     <>
-      {skills.map((skill) => {
-        const { id, name, link, level } = skill;
-        
+      {skills.map(({ id, name, link, level }) => {
         return (
           <div className="relative flex cursor-pointer" key={id}>
             <motion.img
@@ -34,6 +32,6 @@ function Skill({ skills }) {
       })}
     </>
   );
-}
+};
 
 export default Skill;
